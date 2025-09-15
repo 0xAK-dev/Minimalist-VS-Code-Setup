@@ -1,0 +1,149 @@
+{
+    "workbench.enableExperiments": false,                                 // не будет включать экспериментальные функции
+    "workbench.activityBar.location": "hidden",                           // activity bar (explorer, search, git, debug, extantion) скрыта
+    "workbench.startupEditor": "none",                                    // при запуске VS Code не открывается ни один файл и вкладка
+    "window.density.editorTabHeight": "default",                          // высота вкладок по умолчанию
+    "workbench.sideBar.location": "right",                                // sidebar справа (explorer, git, search, debug, extantions)
+    "workbench.tips.enabled": false,                                      // советы при запуске и в интерфейсе не показываются
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "workbench.iconTheme": "vs-trae-seti", // тема редактора
+    "workbench.tree.enableStickyScroll": false,                           // при прокрутке дерева файлов или панели верхние элементы не закрепляются
+    "workbench.tree.renderIndentGuides": "none",                          // нет отображением линиий в дереве файлов
+    "workbench.tree.indent": 14,                                          // отступ вложености в дереве файлов
+    "workbench.list.smoothScrolling": true,                               // плавную скролинг для всех списков и деревьев
+    "workbench.layoutControl.enabled": false,                             // кнопка переключения макета панели редактора скрыты
+    "workbench.panel.showLabels": false,                                  // в терминале показываем значки вместо надписей
+
+    "window.title": "${rootName}",                                        // что будет отображатся в Title bar (название проекта)
+    "window.commandCenter": false,                                        // comand center скрыт
+
+    "explorer.compactFolders": false,                                     // все папки отображаются отдельно, даже если в них только одна подпапка
+    "explorer.confirmDragAndDrop": false,                                 // подтверждение при перемещении файла отключено
+    "explorer.decorations.badges": false,                                 // управляет значками в проводнике (Git-статус, Ошибки) -> откл
+
+    "files.autoSave": "afterDelay",                                       // файл автоматически сохраняется через короткую задержку после изменения
+    "files.trimTrailingWhitespace": true,                                 // уберает лишние пробелы в конце строк.
+    "files.insertFinalNewline": true,                                     // добавляет 1 строку в файл при сохранении
+
+    "editor.smoothScrolling": true,                                       // плавный скролинг включен
+    "editor.minimap.enabled": false,                                      // мини-карта (справа) отклучена
+    "editor.fontSize": 16,                                                // шрифт кода 16px
+    "editor.fontLigatures": true,                                         // специальными комбинациями символов, которые объединяются в один красивый знак => → стрелка (почему-то не работает)
+    "editor.cursorSmoothCaretAnimation": "on",                            // курсор перемещается плавно
+    "editor.lineNumbers": "relative",                                     // нумерация строк относительная (как в vim)
+    "editor.renderLineHighlight": "gutter",                               // как в редакторе подсвечивается текущая строка (где курсор) -> подсвечивается только поле слева
+    "editor.scrollbar.vertical": "auto",                                  // вертикальная полоса прокрутки появляется только при необходимости
+    "editor.scrollbar.horizontal": "hidden",                              // горизонтальная полоса прокрутки никогда не показывается
+    "editor.fontFamily": "JetBrains Mono",                                // шрифт кода JetBrains Mono
+    "editor.overviewRulerBorder": false,                                  // отключает рамку/линию возле полосы прокрутки
+
+    "breadcrumbs.enabled": false,                                         // отключают путь к файлу (хлебные крошки)
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",       // терминал по умолчанию cmd
+    "terminal.integrated.fontFamily": "Mononoki Nerd Font Mono",          // шрифт терминала Mononoki Nerd Font Mono
+    "terminal.integrated.cursorStyle": "line",                            // форма курсора |
+    "terminal.integrated.cursorBlinking": true,                           // мигание курсора в терминале включено
+    "terminal.integrated.cursorWidth": 2,                                 // толшина курсора в терминале 2px
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",        // иконка терминала зеленая
+    "terminal.integrated.fontSize": 14,                                   // шрифт терминала 14px
+
+    // Pylint
+    "pylint.enabled": true,
+    "pylint.args": [
+        "--disable=C0114",                                                // убрать требование docstring для модуля
+        "--disable=C0115",                                                // убрать требование docstring для классов
+        "--disable=C0116",                                                // убрать требование docstring для функций
+    ],
+
+    // Настройка телеметрии
+    "telemetry.telemetryLevel": "off",                                    // отключает отправку телеметрии и статистики
+    "update.enableWindowsBackgroundUpdates": false,                       // отключает фоновое обновление VS Code
+    "update.showReleaseNotes": false,                                     // после обновления VS Code не будет открывать вкладку с новыми изменениями
+    "update.mode": "none",                                                // полностью отключает проверку обновлений редактора
+
+    // Настройка пайтон
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "off",                            // Отключает проверку типов
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.autoSearchPaths": true,                              // ищет пакеты в venv
+    "python.analysis.autoImportCompletions": true,                        // авто импорт
+    "python.analysis.completeFunctionParens": true,                       // при автодополнении функций Pylance автоматически добавляет скобки ()
+    "python.analysis.importFormat": "absolute",                           // импорты предлагаются и отображаются в виде абсолютного пути от корня проекта from mysite.blog import views
+    "python.analysis.useLibraryCodeForTypes": true,                       // подсказывает типы из сторонних библиотек
+
+    "python.analysis.indexing": true,                                     // индексация всех файлов проекта и библиотек для автокомплита и переходов к определениям.
+    // "python.analysis.includeAliasesFromUserFiles": true,               // включает псевдонимы (import X as Y) из пользовательских файлов для автокомплита.
+    "python.analysis.inlayHints.functionReturnTypes": true,               // показывает предполагаемый тип возвращаемого значения функции прямо в коде.
+    "python.analysis.packageIndexDepths": [                               // глубина индексации пакетов
+      {
+        "name": "aiogram",             // названия библиотеки/модуля
+        "depth": 3,                    // уровень вложености для поиска
+        "includeAllSymbols": true      // pylance будет индексировать все символы
+      },
+      {
+        "name": "django",
+        "depth": 3,
+        "includeAllSymbols": true
+      },
+      {
+        "name": "flet",
+        "depth": 3,
+        "includeAllSymbols": true
+      }
+    ],
+
+
+  "emmet.includeLanguages": {                                             // позволяет использовать Emmet (быстрое создание HTML-тегов) в файлах
+    "django-html": "html"
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"                // форматер python по умолчанию black-formatter
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.associations": {                                                 // определяет, как VS Code должен распознавать тип файлов:
+    "**/*.html": "html",
+    "**/templates/*/*.html": "django-html",
+    "**/templates/*/*/*.html": "django-html",
+    "**/templates/*": "django-html",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+
+  "django.snippets.exclude": [                                            // Отключает автодополнение/сниппеты для CMS и Wagtail, если не используются в проекте.
+        "cms",
+        "wagtail"
+  ],
+
+  "[django-html]": {                                                      // настройки для языка
+    "breadcrumbs.showClasses": true,                                      // показывать классы и блоки Django-шаблонов в «хлебных крошках»
+    "editor.quickSuggestions": {                                          // включить подсказки внутри строк, комментариев и других областей в Django-шаблонах
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  // Custom UI style extention
+  "custom-ui-style.stylesheet": {
+    ".tabs-container .tab": "border-radius: 8px 8px 8px 8px !important;",  // скругление вкладок
+    ".tabs-container .tab.active .tab-border-bottom-container": "display: none !important;", // скрытие полоски под текущей вкладкой
+    ".tabs-container": "margin: 3px !important;",                          // отступ контейнера с вкладками
+    ".title.tabs": "--editor-group-tab-height: 30px !important;",          // высота вкладки
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit": "margin: 0 2px !important;",        // отступ по бокам вкладок
+    ".slider": "position: absolute !important; left: 4px !important; width: 8px !important; border-radius: 10px ",  // скругленный scrollbar
+    ".monaco-workbench": "--vscode-editorInlayHint-typeBackground: #00000000 !important"  
+
+  },
+  "custom-ui-style.font.sansSerif": "Mononoki Nerd Font",                  // шрифт для редактора (меню бар, настройки и тд)
+  "animations.Install-Method": "Custom UI Style",                          // анимации в редакторе (откритие панелей, скролинг), (не всегда работает)
+
+  "custom-ui-style.external.imports": [
+    "file:///c:/Users/Kirill/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "git.openRepositoryInParentFolders": "never",
+
+}
+
+
