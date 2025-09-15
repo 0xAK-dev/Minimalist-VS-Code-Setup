@@ -3,6 +3,11 @@
 A clean and lightweight Visual Studio Code configuration focused on simplicity.
 
 
+![Minimalist VS Code Setup](https://github.com/0xAK-dev/Minimalist-VS-Code-Setup/blob/main/images/1.png?raw=true)
+
+![Minimalist VS Code Setup](https://github.com/0xAK-dev/Minimalist-VS-Code-Setup/blob/main/images/2.png?raw=true)
+
+
 ## Features
 - Minimal extensions
 - Clean UI with distraction-free settings
