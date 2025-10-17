@@ -32,10 +32,10 @@
     "editor.cursorSmoothCaretAnimation": "on",                            // курсор перемещается плавно
     "editor.lineNumbers": "relative",                                     // нумерация строк относительная (как в vim)
     "editor.renderLineHighlight": "gutter",                               // как в редакторе подсвечивается текущая строка (где курсор) -> подсвечивается только поле слева
-    "editor.scrollbar.vertical": "auto",                                  // вертикальная полоса прокрутки появляется только при необходимости
-    "editor.scrollbar.horizontal": "hidden",                              // горизонтальная полоса прокрутки никогда не показывается
+    "editor.scrollbar.vertical": "auto", // горизонтальная полоса прокрутки никогда не показывается
     "editor.fontFamily": "JetBrains Mono",                                // шрифт кода JetBrains Mono
     "editor.overviewRulerBorder": false,                                  // отключает рамку/линию возле полосы прокрутки
+    "editor.mouseWheelScrollSensitivity": 1.5,
 
     "breadcrumbs.enabled": false,                                         // отключают путь к файлу (хлебные крошки)
 
@@ -101,7 +101,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter"                // форматер python по умолчанию black-formatter
   },
   "[django-html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "junstyle.vscode-django-support"
   },
 
   "files.associations": {                                                 // определяет, как VS Code должен распознавать тип файлов:
@@ -133,9 +133,27 @@
     ".title.tabs": "--editor-group-tab-height: 30px !important;",          // высота вкладки
     ".monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit": "margin: 0 2px !important;",        // отступ по бокам вкладок
     ".slider": "position: absolute !important; left: 4px !important; width: 8px !important; border-radius: 10px ",  // скругленный scrollbar
-    ".monaco-workbench": "--vscode-editorInlayHint-typeBackground: #00000000 !important"  
+    ".monaco-workbench": "--vscode-editorInlayHint-typeBackground: #00000000 !important",
+    ".mtk7": "color: #f29d79 !important;",
+    ".mtk9": "color: #82d99f !important;",
+    ".mtk3": "color: #eee064 !important;",
+    ".mtk5": "color: #e06c75 !important;",
+    ".mtk6": "color: #9c90ea !important;",
+    ".mtk10": "color: #75caff !important;",
+    // "div.menubar-menu-items-holder div.monaco-scrollable-element": "background-color: #00000000 !important;",
+    // //#workbench\.parts\.titlebar > div > div.titlebar-left > div > div.menubar-menu-button.open > div.menubar-menu-items-holder.monaco-menu-container > div > div.monaco-menu > div > ul > li.action-item.focused > div:nth-child(4)
+    // "ul > li.action-item.focused > div": "background-color: #00000000 !important; backdrop-filter: blur(10px) !important;",
+    // "div.monaco-menu": "backdrop-filter: blur(10px)",
+    //"div.titlebar-left div div.menubar-menu-button.open > div.menubar-menu-items-holder.monaco-menu-container > div > div.monaco-menu > div": "background-color: rgba(25, 27, 31, 0.38) !important; color: #ffffff !important; outline: 1px solid rgba(255,255,255,0.2) !important; box-shadow: 0 2px 8px rgba(0,0,0,0.7) !important; backdrop-filter: blur(10px) !important;"
 
-  },
+    // "#workbench\\.parts\\.sidebar": "border: 1px solid #383b57 !important; border-radius: 6px; height: 100%; width: calc(100% - 5px);",
+    // "div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(1) > div > div.pane-body > div > div > div > div.scrollbar.vertical": "right: 12px !important;",
+    // "div.extensions-list > div > div > div.monaco-list-rows div.monaco-list-row": "scale: 0.95; margin-left: -4px; border-radius: 10px;"
+
+
+
+    // "#workbench\\.parts\\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.margin > div.margin-view-overlays > div > div.current-line.current-line-margin.current-line-exact-margin": "border-radius: 5px !important;"
+  }, //#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.margin > div.margin-view-overlays > div > div.current-line.current-line-margin.current-line-exact-margin
   "custom-ui-style.font.sansSerif": "Mononoki Nerd Font",                  // шрифт для редактора (меню бар, настройки и тд)
   "animations.Install-Method": "Custom UI Style",                          // анимации в редакторе (откритие панелей, скролинг), (не всегда работает)
 
@@ -143,6 +161,15 @@
     "file:///c:/Users/Kirill/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
   "git.openRepositoryInParentFolders": "never",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
 }
 
